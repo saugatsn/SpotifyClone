@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="aside-container">
+        <div class="aside-nav-top aside-nav">
+          <div class="home-wrapper staggered">
+            <i class="fa-solid fa-bars-staggered staggered-bars-open"></i>
+          </div>
+          <div class="home-wrapper home-none">
+            <i class="fa-solid fa-house"></i>
+            <span class="aside-nav1-text">Home</span>
+          </div>
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i
+            ><span class="aside-nav1-text"> Search </span>
+          </div>
+        </div>
+        <div class="aside-main aside-nav">
+          <div class="library-wrapper">
+            <div>
+              <i class="fa-solid fa-bookmark"></i> <span>Your Library</span>
+            </div>
+            <span class="aside-nav-icon">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+
+          <div class="tags">
+            <span class="tag-element"> Playlist </span>
+            <span class="tag-element"> Artists </span>
+            <span class="tag-element"> Albums </span>
+            <span class="tag-element-circle"
+              ><i class="fa-solid fa-angle-right"></i
+            ></span>
+          </div>
+          <div class="horizontal-title-bar">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="horizontal-bar-right">
+              Recents <i class="fa-solid fa-bars fa-bar-aside"></i>
+            </div>
+          </div>
+          <div class="library-container">
+            <div class="library">
+              <div class="library-image"><img src="aside1.png" alt="" /></div>
+              <div class="library-text">
+                <span class="library-title">Liked Songs</span>
+                <div class="library-subtitle">
+                  <span>Playlist&nbsp;</span
+                  ><span class="dot">
+                    <i class="fa-solid fa-circle-dot"></i></span
+                  ><span>&nbsp;282 songs</span>
+                </div>
+              </div>
+            </div>
+            <div class="library">
+              <div class="library-image"><img src="aside2.jpg" alt="" /></div>
+              <div class="library-text">
+                <span class="library-title">Ram Tumhara Naam</span>
+                <div class="library-subtitle">
+                  <span>Album&nbsp;</span
+                  ><span class="dot">
+                    <i class="fa-solid fa-circle-dot"></i></span
+                  ><span>&nbsp;Payal Dev</span>
+                </div>
+              </div>
+            </div>
+            <div class="library">
+              <div class="library-image"><img src="aside3.jpg" alt="" /></div>
+              <div class="library-text">
+                <span class="library-title">Discover Weekly 1</span>
+                <div class="library-subtitle">
+                  <span>Playlist&nbsp;</span
+                  ><span class="dot">
+                    <i class="fa-solid fa-circle-dot"></i></span
+                  ><span>&nbsp;Spotify</span>
+                </div>
+              </div>
+            </div>
+            <div class="library">
+              <div class="library-image"><img src="aside4.jpg" alt="" /></div>
+              <div class="library-text">
+                <span class="library-title">Bhajan Mix</span>
+                <div class="library-subtitle">
+                  <span>Playlist&nbsp;</span
+                  ><span class="dot">
+                    <i class="fa-solid fa-circle-dot"></i></span
+                  ><span>&nbsp;Spotify</span>
+                </div>
+              </div>
+            </div>
+            <div class="library">
+              <div class="library-image"><img src="aside3.jpg" alt="" /></div>
+              <div class="library-text">
+                <span class="library-title">Discover Weekly 2</span>
+                <div class="library-subtitle">
+                  <span>Playlist&nbsp;</span
+                  ><span class="dot">
+                    <i class="fa-solid fa-circle-dot"></i></span
+                  ><span>&nbsp;Spotify</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <!-- <div class="top-bar-relative"> -->
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <div class="top-bar-mobile">
+              <div class="tag-element-circle arrow">
+                <i class="fa-solid fa-bars-staggered staggered-bars-close"></i>
+              </div>
+              <div class="home-text">
+                <div class="tag-element-circle arrow">
+                  <i class="fa-solid fa-home"></i>
+                </div>
+                Home
+              </div>
+            </div>
+            <div class="tag-element-circle arrow arrow-mobile">
+              <i class="fa-solid fa-angles-left angles-left"></i>
+            </div>
+            <div class="tag-element-circle arrow arrow-mobile">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+          <div class="top-bar-right">
+            <button class="top-bar-button explore-premium">
+              Explore Premium
+            </button>
+            <button class="top-bar-button install-app">
+              <i class="fa-solid fa-circle-arrow-down"></i
+              >&nbsp;&nbsp;&nbsp;Install App
+            </button>
+            <div class="bell-and-pic">
+              <div class="bell tag-element-circle">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="profile-pic"><img src="aside2.jpg" alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <div class="main-page-remaining">
+          <div class="main-page-greeting">Good Morning</div>
+          <div class="main-container-tabs">
+            <div class="discover-weekly main-container-inner-tab">
+              <div class="discover-weekly-img main-tab-img">
+                <img src="aside2.jpg" alt="" />
+              </div>
+              <div class="discover-weekly-text">Discover Weekly</div>
+            </div>
+            <div class="liked-songs main-container-inner-tab">
+              <div class="discover-weekly-img main-tab-img">
+                <img src="aside1.png" alt="" />
+              </div>
+              <div class="discover-weekly-text">Liked Songs</div>
+            </div>
+            <div class="bhajan-mix main-container-inner-tab">
+              <div class="discover-weekly-img main-tab-img">
+                <img src="aside3.jpg" alt="" />
+              </div>
+              <div class="discover-weekly-text">Bhajan Mix</div>
+            </div>
+
+            <div class="daily-mix-2 main-container-inner-tab">
+              <div class="discover-weekly-img main-tab-img">
+                <img src="main2.jpg" alt="" />
+              </div>
+              <div class="discover-weekly-text">Daily Mix 2</div>
+            </div>
+            <div class="daily-mix-3 main-container-inner-tab">
+              <div class="discover-weekly-img main-tab-img">
+                <img src="main3.jpg" alt="" />
+              </div>
+              <div class="discover-weekly-text">Daily Mix 3</div>
+            </div>
+            <div class="daily-mix-4 main-container-inner-tab">
+              <div class="discover-weekly-img main-tab-img">
+                <img src="main4.jpg" alt="" />
+              </div>
+              <div class="discover-weekly-text">Daily Mix 4</div>
+            </div>
+          </div>
+          <div class="made-for-title">
+            <span class="made-for">Made for Saugat Nepal</span>
+            <span>Show all</span>
+          </div>
+          <div class="main-tabs">
+            <div class="large-tiles">
+              <img src="main1.jpg" alt="" />
+              <div class="large-tiles-title">Daily Mix 1</div>
+              <div class="large-tiles-subtitle">
+                Prateek Kuhad, Raju Singh, Advait and more
+              </div>
+            </div>
+            <div class="large-tiles">
+              <img src="main2.jpg" alt="" />
+              <div class="large-tiles-title">Daily Mix 2</div>
+              <div class="large-tiles-subtitle">
+                Fly By Midnight, ELWIN, Alec Bailey and more
+              </div>
+            </div>
+            <div class="large-tiles">
+              <img src="main3.jpg" alt="" />
+              <div class="large-tiles-title">Daily Mix 3</div>
+              <div class="large-tiles-subtitle">
+                Pritam, Amit Trivedi, Deepanshu Ruhela and more
+              </div>
+            </div>
+            <div class="large-tiles">
+              <img src="main4.jpg" alt="" />
+              <div class="large-tiles-title">Daily Mix 4</div>
+              <div class="large-tiles-subtitle">
+                Mitraz, Indian Ocean, Ikka and more
+              </div>
+            </div>
+            <div class="large-tiles">
+              <img src="main5.jpg" alt="" />
+              <div class="large-tiles-title">Daily Mix 5</div>
+              <div class="large-tiles-subtitle">
+                Ed Sheeran, Alec Benjamin, R3HAB and more
+              </div>
+            </div>
+            <div class="large-tiles">
+              <img src="main6.jpg" alt="" />
+              <div class="large-tiles-title">Daily Mix 6</div>
+              <div class="large-tiles-subtitle">
+                Arijit Singh, Pritam, Darshan Raval and more
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="play-pause-bar-relative">
+      <div class="play-pause-bar">
+        <div class="now-playing">
+          <div class="now-playing-img">
+            <img src="now-playing.jpg" alt="" />
+          </div>
+          <div class="now-playing-text">
+            <div class="now-playing-text">Zehen</div>
+            <div class="now-playing-subtitle">Mitraz</div>
+          </div>
+          <span class="heart"><i class="fa-regular fa-heart"></i></span>
+        </div>
+        <div class="play-pause-icons">
+          <div class="icons-container">
+            <i class="fa-solid fa-shuffle shuffle remove"></i>
+            <i class="fa-solid fa-backward remove"></i>
+            <i class="fa-solid fa-circle-pause circle-pause remove"></i>
+            <i class="fa-solid fa-forward remove"></i>
+            <i class="fa-solid fa-repeat remove"></i>
+          </div>
+          <div class="rectangle progress-rectangle"></div>
+        </div>
+        <div class="play-pause-extras">
+          <i class="fa-solid fa-circle-play"></i>
+          <i class="fa-solid fa-chart-simple"></i>
+          <i class="fa-solid fa-desktop"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <span><div class="rectangle volume-rectangle"></div></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
